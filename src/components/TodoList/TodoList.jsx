@@ -18,6 +18,11 @@ const TodoList = () => {
       id: crypto.randomUUID(),
       text: todoValue,
     };
+    if (todoValue.trim() === '') {
+      console.log('fill in the field!');
+      return;
+    }
+
     setTodos([...todos, newText]);
     setTodoValue('');
   };
