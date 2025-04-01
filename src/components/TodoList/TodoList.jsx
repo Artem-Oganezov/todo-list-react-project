@@ -8,6 +8,8 @@ const TodoList = () => {
   const [todos, setTodos] = useState(todo);
   const [todoValue, setTodoValue] = useState('');
 
+  console.log(todos);
+
   const handleDelete = id => {
     const newData = todos.filter(item => item.id !== id);
     setTodos(newData);
