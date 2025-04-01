@@ -2,7 +2,7 @@
   border-radius: 8px;
   border-top: 3px solid #4e85de;
   border-bottom: 3px solid #4e85de;
-  margin-top: 5px;
+  margin-top: 15px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -19,8 +19,7 @@
 .todo_info {
   overflow-wrap: break-word;
   margin-left: 20px;
-  margin-right: 20px;
-  max-width: 600px;
+  max-width: 220px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.4;
@@ -33,7 +32,6 @@
   background: #262626;
 }
 .todo_text {
-  width: 600px;
   overflow-wrap: normal;
 }
 
@@ -77,4 +75,16 @@
 
 .icon:hover {
   color: #6da4fd;
+}
+
+@media screen and (min-width: 768px) {
+  .todo_info {
+    max-width: 560px;
+  }
+  .item {
+    max-width: 688;
+  }
+}
+
+@media screen and (min-width: 1158px) {
 }

@@ -20,34 +20,32 @@ const Time = () => {
 
   return (
     <div className={s.container}>
-      <div>
-        <ul className={s.list}>
-          <li>
-            <p>year</p>
-            <p>{year}</p>
-          </li>
-          <li>
-            <p>month</p>
-            <p>{month}</p>
-          </li>
-          <li>
-            <p>days</p>
-            <p>{day}</p>
-          </li>
-          <li>
-            <p>hours</p>
-            <p>{hours}</p>
-          </li>
-          <li>
-            <p>min.</p>
-            <p>{minutes}</p>
-          </li>
-          <li>
-            <p>sec.</p>
-            <p>{seconds}</p>
-          </li>
-        </ul>
-      </div>
+      <ul className={s.list}>
+        <li>
+          <p>year</p>
+          <p>{year}</p>
+        </li>
+        <li>
+          <p>month</p>
+          <p>{month}</p>
+        </li>
+        <li>
+          <p>days</p>
+          <p>{day}</p>
+        </li>
+        <li>
+          <p>hours</p>
+          <p>{hours}</p>
+        </li>
+        <li>
+          <p>min.</p>
+          <p>{minutes}</p>
+        </li>
+        <li>
+          <p>sec.</p>
+          <p>{seconds}</p>
+        </li>
+      </ul>
     </div>
   );
 };

@@ -1,16 +1,15 @@
 .header {
   background: #0d0d0d;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1158px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -24,4 +23,20 @@
   font-weight: 900;
   font-size: 40px;
   color: #4ea8de;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
 }

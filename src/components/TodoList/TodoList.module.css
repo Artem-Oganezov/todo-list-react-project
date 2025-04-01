@@ -2,8 +2,7 @@
   border: 1px solid #0d0d0d;
   border-radius: 8px;
   padding: 18px;
-  width: 638px;
-  height: 54px;
+  width: 100%;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.4;
@@ -15,7 +14,6 @@
 .button {
   display: flex;
   align-items: center;
-  margin-left: 10px;
   border-radius: 8px;
   border-right: 2px solid #4e85de;
   border-left: 2px solid #4e85de;
@@ -42,14 +40,31 @@
 
 .todo {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 25px;
   border-radius: 8px;
   padding: 8px;
+  gap: 10px;
   align-items: center;
   border-top: 3px solid #4e85de;
   border-bottom: 3px solid #4e85de;
 }
 
 .list {
+  max-width: 375px;
   margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .todo {
+    flex-wrap: nowrap;
+    width: 688px;
+  }
+  .list {
+    max-width: 688px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
 }
