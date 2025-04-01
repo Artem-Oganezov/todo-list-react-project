@@ -1,0 +1,55 @@
+.input {
+  border: 1px solid #0d0d0d;
+  border-radius: 8px;
+  padding: 18px;
+  width: 638px;
+  height: 54px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #808080;
+  background: #262626;
+  outline: none;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  border-radius: 8px;
+  border-right: 2px solid #4e85de;
+  border-left: 2px solid #4e85de;
+  padding: 14px;
+  height: 52px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #0558dc;
+  background: #333333;
+  gap: 8px;
+}
+
+.button:hover {
+  background: #3a3a3a;
+  border-right: 2px solid #6da4fd;
+  border-left: 2px solid #6da4fd;
+}
+
+.todo_icon {
+  width: 20px;
+  height: 20px;
+}
+
+.todo {
+  display: flex;
+  margin-top: 25px;
+  border-radius: 8px;
+  padding: 8px;
+  align-items: center;
+  border-top: 3px solid #4e85de;
+  border-bottom: 3px solid #4e85de;
+}
+
+.list {
+  margin-top: 50px;
+}

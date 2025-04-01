@@ -1,0 +1,80 @@
+.item {
+  border-radius: 8px;
+  border-top: 3px solid #4e85de;
+  border-bottom: 3px solid #4e85de;
+  margin-top: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.item_box {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 70px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+  background: #262626;
+}
+
+.todo_info {
+  overflow-wrap: break-word;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 600px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #c1c0c0;
+}
+
+.btn {
+  padding: 0;
+  border-radius: 50%;
+  background: #262626;
+}
+.todo_text {
+  width: 600px;
+  overflow-wrap: normal;
+}
+
+.text_end {
+  text-decoration: line-through;
+
+  color: #808080;
+}
+
+.check_true {
+  width: 30px;
+  height: 30px;
+  color: #f03939;
+  transition: color 0.3s ease;
+}
+
+.check {
+  color: #4e85de;
+}
+
+.pen {
+  width: 30px;
+  height: 30px;
+  color: #4e85de;
+}
+
+.pen:hover {
+  color: #6da4fd;
+}
+.icon_box {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  color: #4e85de;
+}
+
+.icon:hover {
+  color: #6da4fd;
+}
