@@ -27,7 +27,7 @@ const TodoList = () => {
       <div className={s.todo}>
         <input
           value={todoValue}
-          onChange={e => setTodoValue(e.target.value.trim())}
+          onChange={e => setTodoValue(e.target.value)}
           className={s.input}
         />
         <button onClick={handleAdd} className={s.button}>

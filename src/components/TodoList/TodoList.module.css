@@ -17,6 +17,7 @@
   border-radius: 8px;
   border-right: 2px solid #4e85de;
   border-left: 2px solid #4e85de;
+  width: 150px;
   padding: 14px;
   height: 52px;
   font-weight: 700;
@@ -57,6 +58,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .input {
+    width: 520px;
+  }
   .todo {
     flex-wrap: nowrap;
     width: 688px;
