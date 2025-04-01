@@ -1,10 +1,16 @@
 import { useState } from 'react';
 import s from './TodoList.module.css';
-import todo from '../../assets/todo.json';
+
 import TodoItem from '../TodoItem/TodoItem';
 import { HiOutlinePlusCircle } from 'react-icons/hi';
 
 const TodoList = () => {
+  const todo = [
+    {
+      id: 1,
+      text: '',
+    },
+  ];
   const [todos, setTodos] = useState(todo);
   const [todoValue, setTodoValue] = useState('');
 
