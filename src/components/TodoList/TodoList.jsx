@@ -8,8 +8,6 @@ const TodoList = () => {
   const [todos, setTodos] = useState(todo);
   const [todoValue, setTodoValue] = useState('');
 
-  console.log(todos);
-
   const handleDelete = id => {
     const newData = todos.filter(item => item.id !== id);
     setTodos(newData);
@@ -29,7 +27,7 @@ const TodoList = () => {
       <div className={s.todo}>
         <input
           value={todoValue}
-          onChange={e => setTodoValue(e.target.value)}
+          onChange={e => setTodoValue(e.target.value.trim())}
           className={s.input}
         />
         <button onClick={handleAdd} className={s.button}>
