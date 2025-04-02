@@ -1,6 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import s from './TodoList.module.css';
-
 import TodoItem from '../TodoItem/TodoItem';
 import { HiOutlinePlusCircle } from 'react-icons/hi';
 
@@ -11,8 +10,20 @@ const TodoList = () => {
       text: '',
     },
   ];
-  const [todos, setTodos] = useState(todo);
+  const [todos, setTodos] = useState(() => {
+    const saveText = JSON.parse(localStorage.getItem('save-text'));
+    if (saveText?.length) {
+      return saveText;
+    }
+    return todo;
+  });
   const [todoValue, setTodoValue] = useState('');
+
+  // const [todos, setTodos] = useState(()=>JSON.parse(localStorage.getItem('save-text') ?? todo))
+
+  useEffect(() => {
+    localStorage.setItem('save-text', JSON.stringify(todos));
+  }, [todos]);
 
   const handleDelete = id => {
     const newData = todos.filter(item => item.id !== id);
