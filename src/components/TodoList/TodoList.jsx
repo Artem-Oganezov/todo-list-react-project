@@ -44,6 +44,8 @@ const TodoList = () => {
     setTodoValue('');
   };
 
+  const totalTask = String(todos.length - 1).padStart(2, '0');
+
   return (
     <div>
       <div className={s.todo}>
@@ -56,6 +58,11 @@ const TodoList = () => {
           add Task <HiOutlinePlusCircle className={s.todo_icon} />
         </button>
       </div>
+      {todos.length > 1 && (
+        <div className={s.total}>
+          <p>total task: {totalTask}</p>
+        </div>
+      )}
       <ul className={s.list}>
         {todos.map(
           item =>
